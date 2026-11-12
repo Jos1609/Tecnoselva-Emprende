@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item android:id="@+id/nav_sales" android:icon="@drawable/ic_cart" android:title="Ventas" />
+        <item android:id="@+id/nav_orders" android:icon="@drawable/ic_orders" android:title="Pedidos" />
+        <item android:id="@+id/nav_inventory" android:icon="@drawable/ic_store" android:title="Catálogo" />
+        <item android:id="@+id/nav_purchases" android:icon="@drawable/ic_cart" android:title="Compras" />
+        <item android:id="@+id/nav_billing" android:icon="@drawable/ic_document" android:title="Facturación" />
+    </group>
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Configuración" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Cerrar sesión" />
+</menu>

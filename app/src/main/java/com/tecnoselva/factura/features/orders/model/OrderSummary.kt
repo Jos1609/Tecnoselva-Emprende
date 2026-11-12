@@ -1,0 +1,53 @@
+package com.tecnoselva.factura.features.orders.model
+
+data class OrderSummary(
+    val id: String,
+    val orderNumber: String,
+    val customerName: String,
+    val total: Double,
+    val status: String,
+    val paymentStatus: String,
+    val documentType: String,
+    val createdAt: String,
+    val itemsSummary: String = "",
+    val items: List<OrderLineSummary> = emptyList(),
+    val orderType: String = "pickup",
+    val customerDocumentType: String = "",
+    val customerDocumentNumber: String = "",
+    val customerPhone: String = "",
+    val customerAddress: String = "",
+    val shippingRecipient: String = "",
+    val shippingPhone: String = "",
+    val shippingAddress: String = "",
+    val shippingReference: String = "",
+    val paymentMethod: String = "",
+    val amountPaid: Double = 0.0,
+    val amountPending: Double = 0.0,
+    val subtotal: Double = 0.0,
+    val tax: Double = 0.0,
+    val taxRate: Double = 0.0,
+    val discount: Double = 0.0,
+    val shippingCost: Double = 0.0,
+    val notes: String = "",
+    val confirmedAt: String = "",
+    val preparedAt: String = "",
+    val shippedAt: String = "",
+    val deliveredAt: String = "",
+    val cancelledAt: String = "",
+    val cancelledReason: String = "",
+    val documentNumber: String = "",
+    val sunatStatus: String = "",
+    val sunatQrData: String = "",
+    val sunatHash: String = "",
+    val hasElectronicDocument: Boolean = false
+)
+
+data class OrderLineSummary(
+    val name: String,
+    val quantity: Double,
+    val unitPrice: Double = 0.0,
+    val subtotal: Double = 0.0,
+    val variantLabel: String = "",
+    val itemType: String = "product",
+    val notes: String = ""
+)

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_tecnoselva_emprende"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_tecnoselva_emprende"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TecnoSelvaFactura">
+
+        <activity
+            android:name=".features.auth.ui.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TecnoSelvaFactura.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".features.auth.ui.LoginActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.home.ui.HomeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.documents.ui.DocumentsActivity"
+            android:exported="false"
+            android:label="Facturación"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.pos.ui.PosActivity"
+            android:exported="false"
+            android:label="Punto de venta"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.catalog.ui.LocalCatalogActivity"
+            android:exported="false"
+            android:label="Catálogo local"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.orders.ui.OrdersActivity"
+            android:exported="false"
+            android:label="Pedidos"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.purchases.ui.PurchasesActivity"
+            android:exported="false"
+            android:label="Compras"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.purchases.ui.PurchaseDetailActivity"
+            android:exported="false"
+            android:label="Detalle de compra"
+            android:parentActivityName=".features.purchases.ui.PurchasesActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.purchases.ui.PurchaseWizardActivity"
+            android:exported="false"
+            android:label="Nueva compra"
+            android:parentActivityName=".features.purchases.ui.PurchasesActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.settings.ui.SettingsActivity"
+            android:exported="false"
+            android:label="Configuración"
+            android:parentActivityName=".features.home.ui.HomeActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.settings.ui.AppLockActivity"
+            android:exported="false"
+            android:label="Desbloquear aplicación"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.documents.ui.DocumentPreviewActivity"
+            android:exported="false"
+            android:label="Previsualización del comprobante"
+            android:parentActivityName=".features.documents.ui.DocumentsActivity"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.auth.ui.SubscriptionBlockedActivity"
+            android:exported="false"
+            android:label="Suscripción Vencida"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <activity
+            android:name=".features.billing.ui.CreateInvoiceActivity"
+            android:exported="false"
+            android:label="Emitir Factura"
+            android:theme="@style/Theme.TecnoSelvaFactura.FullScreen" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/shared_file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

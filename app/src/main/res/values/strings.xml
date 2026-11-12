@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TECNOSELVA EMPRENDE</string>
+    <string name="navigation_drawer_open">Abrir navegación</string>
+    <string name="navigation_drawer_close">Cerrar navegación</string>
+    <string name="nav_header_title">TECNOSELVA EMPRENDE</string>
+    <string name="nav_header_subtitle">Comprobantes electrónicos</string>
+    <string name="nav_header_desc">Identidad de TECNOSELVA EMPRENDE</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_transform">Inicio</string>
+    <string name="menu_reflow">Facturación</string>
+    <string name="menu_slideshow">Emitir comprobante</string>
+    <string name="menu_settings">Cerrar sesión</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Emitir comprobante</string>
+    <string name="image_view_item_transform_content_description">Imagen de documento</string>
+</resources>

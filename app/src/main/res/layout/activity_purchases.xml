@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/brand_background" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="16dp" android:paddingTop="18dp" android:paddingEnd="16dp" android:paddingBottom="10dp">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/layoutPurchaseSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Buscar proveedor o documento" app:endIconContentDescription="Filtrar compras por fecha" app:endIconDrawable="@drawable/ic_filter_list" app:endIconMode="custom" app:endIconTint="@color/brand_navy" app:startIconDrawable="@drawable/ic_search">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPurchaseSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionSearch" android:inputType="text" android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipePurchases" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPurchases" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingBottom="88dp" />
+            <TextView android:id="@+id/tvPurchasesEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center" android:padding="32dp" android:text="Todavía no hay compras registradas." android:textColor="@color/brand_text_secondary" android:visibility="gone" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabNewPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_marginEnd="22dp" android:layout_marginBottom="18dp" android:contentDescription="Registrar compra" android:src="@drawable/ic_add" app:backgroundTint="@color/brand_green" app:tint="@color/white" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigationPurchases" style="@style/Widget.TecnoSelva.BottomNavigation" android:layout_width="match_parent" android:layout_height="68dp" app:labelVisibilityMode="labeled" app:menu="@menu/bottom_navigation" />
+</LinearLayout>

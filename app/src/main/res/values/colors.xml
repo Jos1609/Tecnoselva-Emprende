@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TecnoSelva: fintech sobrio, pensado para alta legibilidad en mostrador. -->
+    <color name="purple_200">#FFB9D5FF</color>
+    <color name="purple_500">#FF14365D</color>
+    <color name="purple_700">#FF0A2540</color>
+    <color name="brand_navy">#FF0A2540</color>
+    <color name="brand_navy_soft">#FF14365D</color>
+    <color name="brand_blue">#FF246BFD</color>
+    <color name="brand_blue_soft">#FFEAF1FF</color>
+    <color name="teal_200">#FF7CE7C5</color>
+    <color name="teal_700">#FF008C68</color>
+    <color name="brand_green">#FF008C68</color>
+    <color name="brand_green_dark">#FF006D52</color>
+    <color name="brand_green_soft">#FFE2F7F0</color>
+    <color name="brand_background">#FFF5F7FA</color>
+    <color name="brand_surface_subtle">#FFF0F3F7</color>
+    <color name="brand_card">#FFFFFFFF</color>
+    <color name="brand_text_secondary">#FF667085</color>
+    <color name="brand_text_muted">#FF94A3B8</color>
+    <color name="brand_text_primary">#FF102A43</color>
+    <color name="brand_border">#FFDDE4EC</color>
+    <color name="brand_border_strong">#FFC6D1DD</color>
+    <color name="brand_warning">#FFB45309</color>
+    <color name="brand_warning_soft">#FFFFF3D6</color>
+    <color name="brand_danger">#FFB42318</color>
+    <color name="brand_danger_soft">#FFFFE9E7</color>
+    <color name="brand_success">#FF027A5A</color>
+    <color name="brand_success_soft">#FFE0F5EE</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/brand_card" app:cardCornerRadius="14dp" app:cardElevation="0dp" app:strokeColor="@color/brand_border" app:strokeWidth="1dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvCartName" android:layout_width="match_parent" android:layout_height="wrap_content" android:ellipsize="end" android:maxLines="2" android:textColor="@color/brand_text_primary" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvCartPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:textColor="@color/brand_text_secondary" android:textSize="12sp" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCartMinus" style="@style/Widget.TecnoSelva.Button.Compact" android:layout_width="40dp" android:layout_height="40dp" android:minWidth="0dp" android:text="−" android:textSize="18sp" />
+        <TextView android:id="@+id/tvCartQuantity" android:layout_width="38dp" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/brand_text_primary" android:textSize="15sp" android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnCartPlus" style="@style/Widget.TecnoSelva.Button.Compact" android:layout_width="40dp" android:layout_height="40dp" android:minWidth="0dp" android:text="+" android:textSize="18sp" />
+        <ImageButton android:id="@+id/btnCartDelete" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="5dp" android:background="@drawable/bg_status_chip" android:backgroundTint="@color/brand_danger_soft" android:contentDescription="Quitar" android:padding="10dp" android:src="@android:drawable/ic_menu_delete" app:tint="@color/brand_danger" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

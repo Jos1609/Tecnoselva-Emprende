@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <LinearLayout
+        android:id="@+id/splashBrandContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="38dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/splashLogoCard"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:alpha="0"
+            android:scaleX="0.72"
+            android:scaleY="0.72"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="38dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_tecnoselva_emprende" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0"
+            android:text="Gestión que impulsa tu negocio"
+            android:textColor="@color/brand_navy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splashSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:alpha="0"
+            android:gravity="center"
+            android:text="Ventas y facturación electrónica"
+            android:textColor="@color/brand_text_secondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/splashProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="110dp"
+        android:layout_height="3dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="54dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/brand_green" />
+</FrameLayout>

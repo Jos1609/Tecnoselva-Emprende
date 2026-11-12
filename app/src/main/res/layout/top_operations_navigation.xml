@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    android:scrollbars="none">
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/operationsNavigationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+        <com.google.android.material.button.MaterialButton android:id="@+id/navOperationsSales" style="@style/Widget.TecnoSelva.Button.Filter" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Ventas" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/navOperationsOrders" style="@style/Widget.TecnoSelva.Button.Filter" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Pedidos" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/navOperationsBilling" style="@style/Widget.TecnoSelva.Button.Filter" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Facturación" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+</HorizontalScrollView>
